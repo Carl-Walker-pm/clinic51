@@ -1,0 +1,45 @@
+/* Clinic 51 — Club 51 style: deep purple + gold */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap');
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;background:#1B0B2E;color:#F5F0E6;line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;color:#C9A227;line-height:1.2}
+a{color:#C9A227}
+.site-header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:14px 20px;background:#150826;border-bottom:1px solid #C9A227}
+.brand{font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;font-weight:700;letter-spacing:.12em;color:#C9A227;text-decoration:none}
+.langnav{display:flex;flex-wrap:wrap;gap:6px}
+.langnav a{border:1px solid #C9A227;border-radius:999px;padding:4px 12px;color:#F5F0E6;text-decoration:none;font-size:.85rem}
+.langnav a.active{background:#C9A227;color:#1B0B2E;font-weight:700}
+main{max-width:1080px;margin:0 auto;padding:0 20px 40px}
+.hero{min-height:340px;background-size:cover;background-position:center;display:flex;align-items:flex-end;border-radius:0 0 12px 12px;overflow:hidden;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,11,46,.25),rgba(27,11,46,.88))}
+.hero-inner{position:relative;padding:36px 28px}
+.hero h1{font-size:2.6rem;margin:0 0 12px;color:#C9A227;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.hero-dept h1{font-size:2.2rem}
+.hero-desc{color:#fff;font-size:1.1rem;max-width:640px;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+.trust{text-align:center;padding:36px 10px 8px}
+.trust h2{font-size:1.7rem;color:#F5F0E6}
+section{margin-top:36px}
+.about p{font-size:1.1rem;max-width:760px}
+.steps{list-style:none;counter-reset:step;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.steps li{counter-increment:step;background:#2A1B4A;border:1px solid #C9A227;border-radius:10px;padding:20px}
+.steps li::before{content:counter(step);display:block;font-family:'Playfair Display',Georgia,serif;font-size:2rem;color:#C9A227}
+.steps h3{margin:6px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:#2A1B4A;border:1px solid #C9A227;border-radius:10px;overflow:hidden}
+.card a{display:block;text-decoration:none;color:#F5F0E6;height:100%}
+.card img{width:100%;height:170px;object-fit:cover;display:block}
+.card h3{padding:14px 16px 4px;margin:0;font-size:1.15rem}
+.card p{padding:0 16px 16px;margin:0;font-size:.95rem;color:#E8E0D0}
+.form-section{background:#2A1B4A;border:1px solid #C9A227;border-radius:10px;padding:28px;max-width:640px}
+.form-section h2{margin-top:0}
+form label{display:block;margin-bottom:14px;font-weight:600}
+form input,form textarea{width:100%;margin-top:6px;padding:10px 12px;border:1px solid #C9A227;border-radius:6px;background:#1B0B2E;color:#F5F0E6;font:inherit}
+form input:focus,form textarea:focus{outline:2px solid #C9A227}
+form button{background:#C9A227;color:#1B0B2E;border:0;border-radius:6px;padding:12px 28px;font:inherit;font-weight:700;cursor:pointer}
+form button:hover{filter:brightness(1.1)}
+button.booking-soon{background:#C9A227;color:#1B0B2E;border:0;border-radius:6px;padding:12px 28px;font:inherit;font-weight:700;opacity:.6;cursor:not-allowed}
+.form-success{background:#1B0B2E;border:1px solid #C9A227;border-radius:6px;padding:16px;font-weight:600}
+.back{margin-top:28px}
+.site-footer{text-align:center;padding:28px 20px;border-top:1px solid #C9A227;color:#CBBF9A}
+.site-footer .trust{font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;color:#C9A227;padding:0;margin:0 0 8px}
+@media (max-width:600px){.hero h1{font-size:1.9rem}.hero-dept h1{font-size:1.7rem}}
